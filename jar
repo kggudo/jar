@@ -1,0 +1,80 @@
+public class  jar <T>{
+   
+   T element [] ; 
+   int size  ; 
+   
+   
+   
+   
+   
+   
+   
+   public void  add (T le) {
+      
+       
+     element =(T[]) new Integer [10];
+      
+      element[size] = le ; 
+      size++ ; 
+    
+ 
+
+   }
+   
+  /// public T get (){
+      
+      
+   
+ 
+ public String toString() {
+   
+    String a = "Jar contains :";
+
+       if (size != 0) {
+
+           for (T e : element) {
+
+                        a += e + ", ";
+                  }
+            }
+
+            return a;
+
+      }
+   public int getSize (){
+      
+    return size  ;   
+   }
+   
+   
+   
+  
+   public boolean isEmpty (){
+     if ( size<=0)
+        return false ;
+     
+     return true ;
+}
+   
+   public static void main  (String []args){
+      
+      
+      
+      
+      jar<Integer> integerJar = new jar<Integer>();
+   integerJar.add (3);
+      integerJar.add (2);
+      
+      
+      System.out.println (integerJar.isEmpty());
+      
+      System.out.println (integerJar.getSize());
+            System.out.println (integerJar.toString());
+     
+      
+      
+      
+
+      
+   }
+}
